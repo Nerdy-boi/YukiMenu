@@ -21,12 +21,12 @@ menu = {
         "func": lambda: os.system("sudo apt-get update && sudo apt-get upgrade")
     },
     "3": {
-        "name": "Update Pihole",
-        "func": lambda: os.system("pihole -up")
+        "name": "Update Portainer",
+        "func": lambda: os.system("sudo docker-compose up -d /media/william/EXTERNAL/portainer/compose.yml")
     },
     "4": {
         "name": "Chronometer",
-        "func": lambda: os.system("pihole -c")
+        "func": lambda: os.system("docker exec -it  pihole -c")
     },
     "5": {
         "name": "Bash",
